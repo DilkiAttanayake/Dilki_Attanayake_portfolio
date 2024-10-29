@@ -594,7 +594,7 @@ form {
     text-align: center;
     margin: 40px;
     margin-left: 33%;
-    box-shadow: 0 0 15px silver; /* box shadow around the form */
+    box-shadow: 0 0 15px silver; /* Box shadow around the form */
 }
 
 /* relational selector */
@@ -605,18 +605,18 @@ form {
 
 .form {
     color: rgb(229, 138, 27);
-    text-shadow: 2px 2px 4px black; /* Black shadow for the text */
+    text-shadow: 2px 2px 4px black; /* Text shadow */
     font-size: 1.5em;
 }
 
 input[type=text]:enabled { /* UI pseudo class selectors : an attribute selector */
     background: white;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Inner shadow with 30% opacity */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow - Inner shadow with 30% opacity */
 }
 
 input[type=text]:disabled { /* UI pseudo class selectors : an attribute selector */
     background: rgb(189, 172, 149);
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Inner shadow with 30% opacity */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow */
 }
 
 input:checked { /* UI pseudo class selectors : an attribute selector */
