@@ -586,7 +586,7 @@ aside {
 
 form {
     background-color: #27bccd; /* fallback color for older browsers */
-    background-color: rgba(39, 188, 205, 0.5); /* white with 50% opacity (semi transparent colour) */
+    background-color: rgba(39, 188, 205, 0.5); /* Semi transparent color - white with 50% opacity */
     font-weight: bold;
     border: 3px solid blanchedalmond;
     display: inline-block;
@@ -631,7 +631,7 @@ input:checked { /* UI pseudo class selectors : an attribute selector */
 .rating-buttons label {
     display: inline-block;
     padding: 10px 15px;
-    background-color: rgba(20, 9, 164, 0.5); /* semi-transparent color */
+    background-color: rgba(20, 9, 164, 0.5); /* Semi-transparent color */
     color: white;
     border: none;
     border-radius: 5px;
