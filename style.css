@@ -189,7 +189,7 @@ nav a {
     transition: all .2s ease-out;
 }
 
-.top-button:focus {
+.top-button:focus { /* User action pseudo-class */
     outline: 2px solid #3c4fe0; /* Add outline on focus */
     outline-offset: 2px; /* Offset the outline slightly */
 }
