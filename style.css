@@ -147,7 +147,7 @@ nav a {
     color: white;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .footerNav ul {
         flex-direction: column;
     }
@@ -156,6 +156,18 @@ nav a {
         width: 100%;
         text-align: center;
         margin: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px;
     }
 }
 
