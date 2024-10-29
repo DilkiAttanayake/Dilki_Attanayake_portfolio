@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsive for any device screen-->
+    <title>DILKI A.</title>
+    <link rel="stylesheet" href="style.css">
+         
+    <!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    <!--social icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    
+<body>
+    <nav> <!--navigation bar-->
+        <img class="logo" src="Images/logo.png" alt="name logo">
+        <div class="nav-right">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="message.html"><i class="fas fa-paper-plane"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--form-->
+    <div class="feedback-form">
+        <form action="mailto:wathsalaattanayake002@gmail.com" method="post">
+            <div class="form">
+                <h3>FEEDBACK FORM</h3>
+            </div><br>
+
+            FIRST NAME:&nbsp;&nbsp;&nbsp; <!--"&nbsp;" add space inbetween words-->
+            <input type="text" size="40" autofocus required><br><br><br> <!--requred : validate the form fields-->
+
+            LAST NAME:&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" size="40" required><br><br><br>
+
+            EMAIL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" size="40" required><br><br><br>
+
+            COUNTRY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" disabled="disabled" value="SRI LANKA" size="36" style="font-weight: bold;"><br><br><br>
+
+            <div class="gender">
+                <label style="margin-right: 190px;">GENDER:</label>
+                <input type="radio" name="gender"> MALE
+                <input type="radio" name="gender"> FEMALE
+            </div><br><br>
+
+            <div class="checkbox">
+                <label>DID YOU FIND MY PORTFOLIO HELPFUL?</label>&nbsp;&nbsp;
+                <input type="checkbox"> YES
+                <input type="checkbox"> NO
+            </div><br><br><br>
+
+            <label for="subject">SUBJECT</label><br><br>
+            <textarea name="subject" id="subject" rows="2" cols="55" placeholder="Subject" required></textarea><br><br><br>
+
+            <label for="feedback">FEEDBACK</label><br><br>
+            <textarea name="feedback" id="feedback" rows="6" cols="55" placeholder="Write your comment here." required></textarea><br><br><br>
+
+            <div class="ratings">
+                <label>RATINGS</label><br><br>
+                <div class="rating-buttons">
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <label for="rating1">1</label>
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2">2</label>
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3">3</label>
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4">4</label>
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <label for="rating5">5</label><br><br><br>
+                </div>
+            </div>
+
+            <!--submit button-->
+            <input class="submit" type="submit" value="SUBMIT">
+
+
+        </form>
+    </div>
+        
+    <footer> <!--footer-->
+        <div class="footer-content">
+
+            <div class="socialIcons">
+                <a href="mailto:wathsalaattanayake@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dilki-attanayake"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/wath_sala__"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="footerNav">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                </ul>
+                <!-- "Go to Top button" -->
+                <button class="top-button" onclick="scrollToTop()">Go to Top &#8593;</button> <!-- &#8593; (code for upper arrow symbol) -->
+            </div>
+
+            <div class="footerBottom">
+                <p style="text-align: center; color: white;">Copyright &copy;2024 Designed by <span class="designer">DILKI A.</span></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script> // Js for "Go to Top" button
+        function scrollToTop() { // function to scroll the top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll the window for top smoothly
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+    
