@@ -593,7 +593,7 @@ aside {
 
 form {
     background-color: #27bccd; /* fallback color for older browsers */
-    background-color: rgba(39, 188, 205, 0.5); /* Semi transparent color - white with 50% opacity */
+    background-color: rgba(39, 188, 205, 0.5); /* Semi-transparent color - white with 50% opacity */
     font-weight: bold;
     border: 3px solid blanchedalmond;
     display: inline-block;
