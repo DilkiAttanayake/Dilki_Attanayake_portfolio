@@ -598,8 +598,8 @@ form {
     box-shadow: 0 0 15px silver; /* Box shadow around the form */
 }
 
-/* relational selector */
-.feedback-form form input {
+/* RELATIONAL SELECTOR (Descendant Selector) */
+.feedback-form input {
     padding: 5px;
     margin-bottom: 5px;
 }
