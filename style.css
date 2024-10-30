@@ -371,20 +371,20 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
     line-height: 1.5;
 }
 
-/* structural selectors */
+/* Structural Selector */
 p:first-of-type {
     font-size: 1.2em;
     color: #852577;
 }
 
-/* negation pheudo class */
+/* NEGATION PSEUDO CLASS */
 /* Style all paragraphs except those with the class "no-style" */
 p:not(.no-style) {
     font-size: 1.1em;
     color: #333;
 }
 
-.no-style::first-line { /* (text effect) first line of the paragraph */
+.no-style::first-line { /* (Structural Selector) first line of the paragraph */
     font-weight: bold;
     color: rgb(192, 127, 15);
     font-size: 1.2em;
@@ -657,7 +657,7 @@ input.submit {
     border: 5px solid black;
 }
 
-input.submit:hover { /* user action pseudo-classes */
+input.submit:hover { /* user action pseudo-class */
     background-color: green;
     transform: scale(1.05); /* Slight enlargement */
 }
