@@ -669,21 +669,21 @@ input:focus {
     outline: none; /* Removes default outline */
 }
 
-/* Validity pseudo-classes */
+/* Validity pseudo-class */
 input:valid {
     border-color: green; /* Green border for valid input */
 }
 
-input:invalid {
+input:invalid { /* Validity pseudo-class */
     border-color: rgb(164, 62, 62); /* Red border for invalid input */
     border-width: 5px;
 }
 
-input:required {
+input:required { /* Validity pseudo-class */
     border-width: 5px; /* Thicker border for required input */
 }
 
-input:optional {
+input:optional { /* Validity pseudo-class */
     border-width: 1px; /* Thinner border for optional input */
 }
 
