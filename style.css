@@ -402,8 +402,8 @@ p:not(.no-style) {
     transition: background-color 0.3s;
     font-size: 1em;
     font-weight: bold;
-    text-transform: uppercase; /* Makes text uppercase (text effect) */
-    letter-spacing: 1px; /* Adds space between letters (text effect) */
+    text-transform: uppercase; /* Makes text uppercase (Text Effect) */
+    letter-spacing: 1px; /* Adds space between letters (Text Effect) */
 }
 
 .visit-button:hover {
