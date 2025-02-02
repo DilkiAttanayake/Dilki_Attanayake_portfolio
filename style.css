@@ -4,10 +4,11 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body {
-    background-color: rgb(35, 57, 65);
+    background-color: black;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -17,7 +18,7 @@ h3 {
 
 /*navigation bar*/
 nav {
-    background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
+    background: linear-gradient(109.6deg, rgba(98, 210, 141, 0.88) 11.2%, rgba(234, 245, 45, 0.79) 88%);
     align-items: center;
     color: black;
     font-weight: bold;
@@ -29,8 +30,7 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    padding: 5px;
+    width: 60px;
 }
 
 .nav-right ul li {
@@ -73,10 +73,10 @@ nav a {
 
 /*footer*/
 .footer-content {
-    background-color: black;
+    background-color: rgb(76, 77, 82, 0.7);
     opacity: 0.8;
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 80px;
     width: 100%;
 }
 
@@ -120,7 +120,7 @@ nav a {
 }
 
 .footerNav ul li a {
-    color: rgb(18, 159, 241);
+    color: rgb(218, 209, 28);
     margin: 20px;
     text-decoration: none; /* Text Effect */
     font-size: 1.2em;
@@ -166,25 +166,25 @@ nav a {
 
     .footerNav ul li {
         width: 100%;
-        text-align: center;
+        text-align: right;
         margin: 5px;
     }
 }
 
 .top-button {
-    margin: 10px;
+    margin: 0px;
     margin-left: 40px;
     display: inline-block;
     outline: 0;
     border: 0;
     cursor: pointer;
     font-weight: 600;
-    color: #fff;
+    color: black;
     font-size: 14px;
     height: 38px;
     padding: 8px 24px;
     border-radius: 50px;
-    background-image: linear-gradient(180deg, #7c8aff, #3c4fe0);
+    background-image: linear-gradient(180deg, #c6bc0e, #41e03c);
     box-shadow: 0 4px 11px 0 rgba(37, 44, 97, 0.15), 0 1px 3px 0 rgba(93, 100, 148, 0.20); /* Box Shadow */
     transition: all .2s ease-out;
 }
@@ -200,22 +200,11 @@ nav a {
 
 .details {
     font-family: 'Bungee Shade', cursive;
-    font-size: 47px;
-    margin-top: 20px;
+    font-size: 46px;
+    margin-top: 40px;
     margin-left: 40px;
     color: rgb(216, 194, 26);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Black shadow with 50% opacity (Text effect + Shadow) */
-}
-
-.information {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    color: rgb(241, 244, 205);
-    margin-left: 40px;
-    list-style-type: disc;
-    position: relative;
-    text-transform: uppercase; /* Text Effect - (Capitalizes all the letters of each word)*/
-    letter-spacing: 1px; /* Adds space between letters (text effect) */
 }
 
 /* targets image tag with alt attribute */
@@ -246,76 +235,55 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
 
 .role {
     font-family: 'Bungee Shade', cursive;
-    font-size: 37px;
+    font-size: 35px;
     color: greenyellow;
-    text-align: right;
+    text-align: center;
     position: relative;
-    margin-top: 250px;
+    margin-top: 292px;
+    margin-left:950px;
 }
 
 /* Media queries for responsiveness */
 
-@media (max-width: 1024px) { /* Media query for devices with maximum width of 1024px (large devices-desktops) */
-    .details {
-        font-size: 2em;
-    }
-
-    .role {
-        font-size: 1.5em;
-    }
-
-    img[alt="profile picture"] {
-        width: 350px;
-        height: 350px;
-        position: relative;
-    }
-}
-
 @media (max-width: 768px) { /* Media query for devices with maximum width of 768px (medium devices-tablets) */
     .details {
         font-size: 1.5em;
+        text-align: center;
+        margin-left: 0;
     }
 
     .role {
         font-size: 1.2em;
+        margin-left: 0;
+        margin-top: 40%;
     }
 
     img[alt="profile picture"] {
         width: 300px;
         height: 300px;
-        position: relative;
+        margin-left: 30%;       
+        display: block;
     }
 }
 
 @media (max-width: 600px) { /* Media query for devices with maximum width of 600px (small devices-phones) */
     .details {
         font-size: 1.2em;
+        text-align: center;
+        margin-left: 0;
     }
 
     .role {
         font-size: 1em;
+        margin-left: 0;
+        margin-top: 60%;
     }
 
     img[alt="profile picture"] {
         width: 200px;
         height: 200px;
-        position: relative;
-    }
-}
-
-@media (max-width: 480px) { /* Media query for devices with maximum width of 480px (extra small devices-phones) */
-    .details {
-        font-size: 1em;
-    }
-
-    .role {
-        font-size: 0.8em;
-    }
-
-    img[alt="profile picture"] {
-        width: 150px;
-        height: 150px;
-        position: relative;
+        margin-left: 22%;
+        display: block;
     }
 }
 
@@ -323,12 +291,14 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
 /*--------------------------------- ABOUT PAGE STYLES--------------------------------------- */      
 
 .about_me2 {
-    width: 470px;
+    width: 350px;
     float: right; /*moves image to the right side*/
-    padding: 30px;
+
     opacity: 0; /* Initial state for fade-in effect */
     transform: scale(0.9); /* Initial scale for zoom-in effect */
     animation: zoomIn 2s forwards; /* Apply the animation */
+    border: rgb(108, 97, 97) 3.5px solid;
+    margin-left: 40px;
 }
 
 /* Define the keyframes for the zoom-in animation */
@@ -340,11 +310,12 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
 }
 
 .about {
-    background: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
+    background-color: #DADD98;
     padding: 40px;
-    margin: 20px;
+    margin: 60px;
     opacity: 0; /* Initial state for fade-in effect */
     animation: fadeIn 2s forwards; /* Apply the animation */
+    text-align: justify; /* Justify the paragraphs */
 }
 
 /* Define the keyframes for the fade-in animation */
@@ -361,7 +332,7 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
     text-align: left;
     font-weight: bold;
     font-size: 1.9em;
-    color: #333;
+    color: #bb147e;
     margin-bottom: 20px;
 }
 
@@ -407,7 +378,7 @@ p:not(.no-style) {
 }
 
 .visit-button:hover {
-    background-color: #0056b3;
+    background-color: #00b31b;
     cursor: pointer; /*change the cursor to hand cursor*/
 }
 
@@ -430,7 +401,7 @@ p:not(.no-style) {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .about_me2 {
         width: 90%; /* Adjust width for very small screens */
         float: none; /* Remove float */
