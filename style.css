@@ -332,7 +332,7 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
     text-align: left;
     font-weight: bold;
     font-size: 1.9em;
-    color: #bb147e;
+    color: #543c4b;
     margin-bottom: 20px;
 }
 
@@ -345,7 +345,7 @@ img[alt="profile picture"] { /* CSS attribute selector based on alt attribute */
 /* Structural Selector */
 p:first-of-type {
     font-size: 1.2em;
-    color: #852577;
+    color: #3a9746;
 }
 
 /* NEGATION PSEUDO CLASS */
@@ -418,15 +418,27 @@ p:not(.no-style) {
 
 
 /*--------------------------------- PROJECTS PAGE STYLES--------------------------------------- */   
-
-.below_water, .plane {
-    height: 450px;
-    margin: 40px;
+.mangrove{
+    width: 660px;   
+    margin: 15px;
 }
-.class {
-    width: 570px;
-    height: 450px;
-    margin: 40px;
+
+.water{
+    width: 660px; 
+    Height:400px;  
+    margin: 15px;
+}
+
+.python {
+    width: 660px;
+    height: 420px;
+    margin: 15px;
+}
+
+.java {
+    width: 660px;
+    height: 420px;
+    margin: 15px;
 }
 
 h2 {
@@ -459,28 +471,30 @@ h2::after {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 15px;
 }
 
-article p{ /* change style of all p elements inside article tag */ 
+article p { /* change style of all p elements inside article tag */ 
     font-size: 1em;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
 }
 
-.blog, .blog_1 {
+.blog_1, .blog_2, .blog_3, .blog_4 {
     text-align: justify;
-    padding: 10px;
     border: 5px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 15px 20px rgba(240, 223, 223, 0.678);
-    margin: 25px;
-    width: 48%;
+    margin: 15px;
+    width: calc(50% - 50px); /* Ensure two blogs fit in one row */
+    box-sizing: border-box; /* Ensures width calculations include padding and border */
 }
 
-.blog_1 mark {
+
+.blog_3 mark {
     background-color: rgb(227, 30, 155);
 }
 
@@ -493,27 +507,20 @@ article p{ /* change style of all p elements inside article tag */
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
+    margin:10px;
 }
 
-.blog_2 {
-    text-align: justify;
-    padding: 10px;
-    border: 5px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 15px 20px rgba(240, 223, 223, 0.678);
-    margin: 50px 25% 50px 25%;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.blog_1 mark {
+    background-color: rgb(100, 217, 100);
 }
 
 .blog_2 mark {
-    background-color: rgb(100, 217, 100);
+    background-color: rgb(100, 160, 217);
 }
 
 .date {
     text-align: right;
-    color: yellowgreen;
+    color: white;
     margin-right: 10px;
 }
 
@@ -526,35 +533,44 @@ aside {
     .projects {
         flex-direction: column; /* Stack projects vertically */
         align-items: center; /* Center align items */
-        margin: 10px;
     }
 
-    .below_water, .plane, .class {
-        width: 90%; /* Adjust width for smaller screens */
+    .mangrove, .water, .python, .java {
+        width: 100%; /* Adjust width for smaller screens */
         height: auto; /* Maintain aspect ratio */
-        margin: 20px 0; /* Adjust margin */
+        margin: 10px 0; /* Adjust margin */
     }
 
-    h1 {
+    h2 {
         font-size: 1.2em; /* Adjust heading size */
     }
 
-    h1::after {
-        width: 90%; /* Adjust width of pseudo element */
+    h2::after {
+        width: 80%; /* Adjust width of pseudo element */
+    }
+
+    .blog_1, .blog_2, .blog_3, .blog_4 {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10px auto; /* Center the blogs */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .projects {
         flex-direction: column; /* Stack projects vertically */
         align-items: center; /* Center align items */
         margin: 5px;
     }
 
-    .below_water, .plane, .class {
-        width: 90%; /* Adjust width for very small screens */
+    .mangrove, .water, .python, .java {
+        width: 100%; /* Adjust width for very small screens */
         height: auto; /* Maintain aspect ratio */
         margin: 10px 0; /* Adjust margin */
+    }
+
+    .blog_1, .blog_2, .blog_3, .blog_4 {
+        width: 100%; /* Adjust width for very small screens */
+        margin: 5px 0; /* Adjust margin */
     }
 }
 
@@ -564,15 +580,15 @@ aside {
 
 form {
     background-color: #27bccd; /* fallback color for older browsers */
-    background-color: rgba(39, 188, 205, 0.5); /* Semi-transparent color - white with 50% opacity */
+    background-color: #ACE1AF; 
     font-weight: bold;
-    border: 3px solid blanchedalmond;
+    border: 3px solid black;
     display: inline-block;
     padding: 50px;
     text-align: center;
-    margin: 40px;
+    margin: 10px;
     margin-left: 33%;
-    box-shadow: 0 0 15px silver; /* Box shadow around the form */
+    box-shadow: 0 0 25px silver; /* Box shadow around the form */
 }
 
 /* RELATIONAL SELECTOR (Descendant Selector) */
@@ -610,7 +626,7 @@ input:checked { /* Attribute Selector - UI pseudo class selector */
 .rating-buttons label {
     display: inline-block;
     padding: 10px 15px;
-    background-color: rgba(20, 9, 164, 0.5); /* Semi-transparent color */
+    background-color: rgba(104, 102, 8, 0.7); /* Semi-transparent color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -622,11 +638,11 @@ input:checked { /* Attribute Selector - UI pseudo class selector */
 /* attribute selector + class selector */
 .rating-buttons input[type="radio"]:checked+label { /* input[type="radio"]:checked: Selects any radio input that is checked.  
 +label: Targets the label that immediately follows the checked radio button. */
-    background-color: rgba(255, 255, 0, 0.5); /* Semi-transparent color (yellow) */
+    background-color: rgba(185, 185, 24, 0.5); /* Semi-transparent color (yellow) */
 }
 
 input.submit {
-    background-color: rgba(15, 195, 123, 0.5); /* semi-transparent green */
+    background-color: rgba(31, 143, 19, 0.7); /* semi-transparent green */
     padding: 15px;
     font-size: 1em;
     font-weight: bold;
@@ -636,7 +652,7 @@ input.submit {
 }
 
 input.submit:hover { /* user action pseudo-class */
-    background-color: green;
+    background-color: rgb(39, 214, 39);
     transform: scale(1.05); /* Slight enlargement */
 }
 
@@ -676,9 +692,14 @@ input:optional { /* Validity pseudo-class */
     .feedback-form form input {
         width: 100%; /* Make inputs full width */
     }
+
+    textarea {
+        width: 100%;
+        font-size: 14px; 
+    }
 }
 
-@media (max-width: 480px) { /* media query targets devices with maximum width of 480px */
+@media (max-width: 600px) { /* media query targets devices with maximum width of 480px */
     form {
         width: 70%; /* Adjust form width for very small screens */
         margin-left: 5%; /* Center the form */
@@ -687,5 +708,9 @@ input:optional { /* Validity pseudo-class */
 
     .feedback-form form input {
         width: 100%; /* Make inputs full width */
+    }
+    textarea {
+        width: 100%;
+        font-size: 14px; 
     }
 }
