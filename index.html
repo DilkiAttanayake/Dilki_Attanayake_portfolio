@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsive for any device screen-->
-    <title>DILKI A.</title>
+    <title>DILKI</title>
     <link rel="stylesheet" href="style.css">
 
     <!--Google fonts -->
@@ -15,60 +15,728 @@
 </head>
 
 <body>
-    <nav> <!--navigation bar-->
-        <a href="index.html"><img class="logo" src="Images/logo.png" alt="name logo"></a>
-        <div class="nav-right">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="message.html"><i class="fas fa-paper-plane"></i></a></li>
-            </ul>
+    <!-- Floating particles for whole site -->
+    <div class="site-floating-particles">
+        <div class="site-particle" style="left: 10%; animation-delay: 0s; top: 10%;"></div>
+        <div class="site-particle" style="left: 20%; animation-delay: 1s; top: 30%;"></div>
+        <div class="site-particle" style="left: 30%; animation-delay: 2s; top: 50%;"></div>
+        <div class="site-particle" style="left: 40%; animation-delay: 3s; top: 20%;"></div>
+        <div class="site-particle" style="left: 50%; animation-delay: 4s; top: 60%;"></div>
+        <div class="site-particle" style="left: 60%; animation-delay: 5s; top: 40%;"></div>
+        <div class="site-particle" style="left: 70%; animation-delay: 1.5s; top: 70%;"></div>
+        <div class="site-particle" style="left: 80%; animation-delay: 2.5s; top: 30%;"></div>
+        <div class="site-particle" style="left: 90%; animation-delay: 3.5s; top: 80%;"></div>
+        <div class="site-particle" style="left: 15%; animation-delay: 0.7s; top: 85%;"></div>
+        <div class="site-particle" style="left: 25%; animation-delay: 1.8s; top: 65%;"></div>
+        <div class="site-particle" style="left: 35%; animation-delay: 2.3s; top: 15%;"></div>
+        <div class="site-particle" style="left: 55%; animation-delay: 3.2s; top: 75%;"></div>
+        <div class="site-particle" style="left: 65%; animation-delay: 4.1s; top: 10%;"></div>
+        <div class="site-particle" style="left: 75%; animation-delay: 2.9s; top: 55%;"></div>
+        <div class="site-particle" style="left: 85%; animation-delay: 1.2s; top: 45%;"></div>
+        <div class="site-particle" style="left: 95%; animation-delay: 0.5s; top: 25%;"></div>
+    </div>
+    
+    <!-------------------------- navigation bar ------------------------------------->
+    
+    <nav class="navbar">
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <div class="nav-header">
+            <label for="nav-toggle" class="nav-toggle-label">☰</label>
         </div>
+
+        <ul class="nav-menu">           
+
+            <li class="logo">
+                <img src="Images/logo.png" alt="Logo" style="height:48px; vertical-align:middle; margin-right:140px; margin-left:10px; margin-top:2px;">
+            </li>
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#message" class="nav-link">Contact</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="cta-button" style="margin-left:120px;">Start</a>
+            </li>
+        </ul>
     </nav>
 
+
+    <!-------------------------------- Profile ---------------------------------------->
+
     <section>
-        <h1 class="details">DILKI ATTANAYAKE</h1>
+        <h1 class="details" style="margin-top: 40px;">DILKI ATTANAYAKE</h1>
             
         <!--image-->
-        <img src="Images/profile_pic.png" alt="profile picture">
-        <h3 class="role">DIGITAL CREATOR <br>&<br>FULL STACK ENTHUSIAST</h3>
+        <img src="Images/profile_pic.jpg" alt="profile picture">
+        <h3 class="role">SE ENTHUSIAST <br>&<br>DIGITAL CREATOR</h3>
     </section>
 
-    <br><br>
+    <br>
 
-    <footer> <!--footer-->
-        <div class="footer-content">
 
-            <div class="socialIcons">
-                <a href="mailto:wathsalaattanayake@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/dilki-attanayake"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/wath_sala__"><i class="fab fa-instagram"></i></a>
+    <!---------------------------- About section ------------------------------------>
+
+   <section class="about-section" id="about">
+        
+        <div class="about-container">
+            <div class="section-header">
+                <h1 class="section-title1">About Me</h1>
+                <p class="section-subtitle">Passionate Software Engineer</p>
             </div>
 
-            <div class="footerNav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                </ul>
-                <!-- "Go to Top button" -->
-                <button class="top-button" onclick="scrollToTop()">Go to Top &#8593;</button> <!-- &#8593; (code for upper arrow symbol) -->
-            </div>
+            <div class="about-content">
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <div class="profile-ring"></div>
+                        <img src="Images/pro_pic2.jpg" 
+                             alt="Profile Picture" class="profile-image">
+                    </div>
+                    
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Team Projects</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="footerBottom">
-                <p style="text-align: center; color: white;">Copyright &copy;2024 Designed by <span class="designer">DILKI A.</span></p>
-            </div>
+                <div class="about-text">
+                    <h2>Hello, I'm Dilki Wathsala Attanayake</h2>
+                    <p>I'm a passionate full-stack developer.
+                        I have a strong drive to create innovative solutions that make a positive impact 
+                        on the world. With a background in computer science and a deep understanding of  
+                        both client-side and server-side development.</p>
+                    
+                    <p>I have hands-on experience in a variety of programming languages, including Java,
+                        Python, OOP, React, Tailwind CSS, Node.js and database management. My journey in tech has allowed me to work on 
+                        exciting projects, from crafting interactive websites to building server-side architectures, 
+                        each one pushing my skills to new heights. </p>
+                                
+                    <p> Currently, I am the group leader of my university's software development group project, coastalcanopy.org.lk, 
+                        a comprehensive, community-oriented web application dedicated to the monitoring, protection, and sustainable 
+                        management of mangrove ecosystems in Sri Lanka. Leading this project has strengthened my leadership, problem-solving, 
+                        and project management skills while fostering teamwork and innovation among my team members.
+                    </p>
 
+                    <div class="skills-section">
+                        <h3 class="skills-title">Core Skills</h3>
+                        <div class="skills-grid">
+
+                            <div class="skill-item">
+                                <span class="skill-icon">💻</span>
+                                <span class="skill-name">Web Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">⚙️</span>
+                                <span class="skill-name">Backend Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🗃️</span>
+                                <span class="skill-name">Database Management</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">⚡</span>
+                                <span class="skill-name">Performance</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🚀</span>
+                                <span class="skill-name">Deployment</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🔧</span>
+                                <span class="skill-name">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-section" id="buttons2">
+                        <a href="#message" class="cta-button cta-primary">
+                            Get In Touch
+                            <span>→</span>
+                        </a>
+                        <a href="#projects" class="cta-button cta-secondary">
+                            View My Work
+                            <span>📁</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script> // Js for "Go to Top" button
-        function scrollToTop() { // function to scroll the top of the page
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll the window for top smoothly
-        }
+    <script>
+        // Animate elements on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Animate skill items
+            const skillItems = document.querySelectorAll('.skill-item');
+            skillItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = `all 0.6s ease ${index * 0.1}s`;
+                observer.observe(item);
+            });
+
+            // Animate stats
+            const statItems = document.querySelectorAll('.stat-item');
+            statItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = `all 0.5s ease ${index * 0.2}s`;
+                observer.observe(item);
+            });
+
+            // Add hover effect to profile image
+            const profileImage = document.querySelector('.profile-image');
+            profileImage.addEventListener('mouseenter', function() {
+                this.style.filter = 'brightness(1.1) contrast(1.1)';
+            });
+            
+            profileImage.addEventListener('mouseleave', function() {
+                this.style.filter = 'brightness(1) contrast(1)';
+            });
+
+            // Counter animation for stats
+            function animateCounter(element, target) {
+                let current = 0;
+                const increment = target / 30;
+                const timer = setInterval(function() {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    element.textContent = Math.floor(current) + '+';
+                }, 50);
+            }
+
+            // Trigger counter animation when stats are visible
+            const statsObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statNumber = entry.target.querySelector('.stat-number');
+                        const target = parseInt(statNumber.textContent);
+                        animateCounter(statNumber, target);
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            });
+
+            statItems.forEach(item => {
+                statsObserver.observe(item);
+            });
+        });
     </script>
-</body>
+
+
+    <!------------------------------------- projects section ------------------------------------->
+
+    <section class="projects-section" id="projects">
+        <div class="floating-elements">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Showcasing Innovation & Creativity</p>
+            
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-filter="all">All Projects</div>
+                <div class="filter-tab" data-filter="web">Web Apps</div>
+                <div class="filter-tab" data-filter="game">Games</div>
+                <div class="filter-tab" data-filter="backend">APIs/ Backend Systems</div>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: Coastal Canopy-->
+
+            <div class="project-card" data-category="web">
+                <div class="project-image-container">
+                    <img src="Images\coastal_canopy.png" 
+                         alt="Coastal Canopy" class="project-image">
+                    <div class="project-overlay">
+                        <a href="https://coastalcanopy.org.lk/" class="overlay-btn">
+                            <span>👁️</span> Preview
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Deployed Web Application</span>
+                    <h3 class="project-title">Coastal Canopy</h3>
+                    <p class="project-description">
+                        A community-oriented web platform for mangrove conservation, featuring community reporting and AI verification,
+                        mangrove monitoring, mangrove map, gamification and merchandise.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">YOLO v8</span>
+                        <span class="tech-tag">Cloudinary</span>
+                        <span class="tech-tag">Google Earth Engine</span>
+                        <span class="tech-tag">PayPal</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://coastalcanopy.org.lk/" class="project-link link-primary">
+                            <span>🌐</span> Visit Site
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Estate Agent Web App -->
+            <div class="project-card" data-category="web">
+                <div class="project-image-container">
+                    <img src="Images\estate_agent.png" 
+                         alt="Estate Agent Web App" class="project-image">
+                    <div class="project-overlay">
+                        <a href="https://home-seek-smart.vercel.app/" class="overlay-btn">
+                            <span>👁️</span> Preview
+                        </a>    
+                    </div>
+
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Deployed Web Application</span>
+                    <h3 class="project-title">Estate Agent Web Application</h3>
+                    <p class="project-description">
+                         A client-side responsive web application using React.js, 
+                         HTML5, and Bootstrap, incorporating DOMPurify for 
+                         HTML sanitization and HTML encoding to mitigate client-side vulnerabilities 
+                         such as cross-site scripting (XSS).
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://home-seek-smart.vercel.app/" class="project-link link-primary">
+                            <span>🌐</span> Visit Site
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Snake Game -->
+            <div class="project-card" data-category="game">
+                <div class="project-image-container">
+                    <img src="Images\snake_game.png" 
+                         alt="Snake Game" class="project-image">
+                    <div class="project-overlay">
+                        <a href="https://dilkiattanayake.github.io/snake-game/" class="overlay-btn">
+                            <span>👁️</span> Preview
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Gaming</span>
+                    <h3 class="project-title">Snake Game</h3>
+                    <p class="project-description">
+                        A portable single-page Snake game using HTML5, CSS3, and vanilla JavaScript, utilizing the Canvas API 
+                        for rendering and local storage for high score persistence. And implemented game loop, keyboard controls, 
+                        collision detection, and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Vanilla JavaScript</span>
+                        <span class="tech-tag">Canvas API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://dilkiattanayake.github.io/snake-game/" class="project-link link-primary">
+                            <span>🌐</span> Visit Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Plane Seat Reservation Application -->
+            <div class="project-card" data-category="backend">
+                <div class="project-image-container">
+                    <img src="Images/plane_seat.jpg" 
+                         alt="Plane Seat Reservation Application" class="project-image">
+                    
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Backend System</span>
+                    <h3 class="project-title">Plane Seat Reservation Application</h3>
+                    <p class="project-description">
+                        A Java application to efficiently manage 50+ seat reservations, improving the booking process.
+                        
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Real-Time Event Ticketing System -->
+            <div class="project-card" data-category="backend">
+                <div class="project-image-container">
+                    <img src="Images/ticketing_system.png" 
+                         alt="Real-Time Event Ticketing System" class="project-image">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Backend System</span>
+                    <h3 class="project-title">Real-Time Event Ticketing System</h3>
+                    <p class="project-description">
+                       A Real-Time Event Ticketing System using OOP, Spring Boot, React.js and MySQL. And used the Producer-Consumer pattern 
+                       to manage concurrent ticket sales and ensure data integrity.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Project 6: Bookstore RESTful API -->
+            <div class="project-card" data-category="backend">
+                <div class="project-image-container">
+                    <img src="Images/bookstore_api.png" 
+                         alt="bookstore_API" class="project-image">
+                    
+                </div>
+                <div class="project-content">
+                    <span class="project-category">RESTful API</span>
+                    <h3 class="project-title">Bookstore RESTful API</h3>
+                    <p class="project-description">
+                        A RESTful API using Java (JAX-RS) and JSON for a simulated bookstore system, handling books, authors, customers, carts, 
+                        and orders. Implemented core HTTP methods (GET, POST, PUT, DELETE) across modular resource classes with custom exception handling, 
+                        and validated endpoints through comprehensive Postman testing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">RESTful API</span>
+                        <span class="tech-tag">JAX-RS</span>
+                        <span class="tech-tag">Postman</span>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeInUp 0.6s ease forwards';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all project cards
+            projectCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+
+
+        // Add smooth hover effects for better interaction
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.zIndex = '10';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.zIndex = '1';
+            });
+        });
+    </script>
+
+
+    <!---------------------------------------- Contact section ----------------------------------------->
+        
+    <div class="message-container" id="message">
+
+        <div class="floating-particles">
+            <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 40%; animation-delay: 3s;"></div>
+            <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+            <div class="particle" style="left: 70%; animation-delay: 1.5s;"></div>
+            <div class="particle" style="left: 80%; animation-delay: 2.5s;"></div>
+            <div class="particle" style="left: 90%; animation-delay: 3.5s;"></div>
+        </div>
+        
+        <h1 class="title">Send Message</h1>
+        <p class="subtitle" style="color:rgba(114, 109, 109, 0.8);">Share your thoughts with the world</p>
+        
+        <form id="messageForm">
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required size="60">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>            
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required maxlength="500"></textarea>
+                <div class="char-counter" id="charCounter">0 / 500 characters</div>
+            </div>
+            
+            <button type="submit" class="send-button">
+                Send Message 📩 
+            </button>
+            
+            <div class="success-message" id="successMessage">
+                ✅ Your message has been sent successfully!
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('messageForm');
+        const messageTextarea = document.getElementById('message');
+        const charCounter = document.getElementById('charCounter');
+        const successMessage = document.getElementById('successMessage');
+
+        // Character counter
+        messageTextarea.addEventListener('input', function() {
+            const currentLength = this.value.length;
+            const maxLength = 500;
+            
+            charCounter.textContent = `${currentLength} / ${maxLength} characters`;
+            
+            if (currentLength > maxLength * 0.9) {
+                charCounter.className = 'char-counter danger';
+            } else if (currentLength > maxLength * 0.7) {
+                charCounter.className = 'char-counter warning';
+            } else {
+                charCounter.className = 'char-counter';
+            }
+        });
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            const button = form.querySelector('.send-button');
+            const originalText = button.textContent;
+            
+            button.textContent = 'Sending...';
+            button.style.background = 'linear-gradient(135deg, #666 0%, #999 100%)';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = 'linear-gradient(135deg, #ffff00 0%, #90ee90 100%)';
+                button.disabled = false;
+                
+                successMessage.classList.add('show');
+                form.reset();
+                charCounter.textContent = '0 / 500 characters';
+                charCounter.className = 'char-counter';
+                
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 4000);
+            }, 2000);
+        });
+
+        // Add subtle hover effects to inputs
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-1px)';
+            });
+            
+            input.addEventListener('mouseleave', function() {
+                if (this !== document.activeElement) {
+                    this.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+    
+
+    <!---------------------------------------- Footer ----------------------------------------->
+
+    <footer class="footer">
+            <div class="floating-elements">
+                <div class="floating-circle"></div>
+                <div class="floating-circle"></div>
+                <div class="floating-circle"></div>
+            </div>
+            
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>About</h3>
+                        <p> Enthusiastic second year Computer Science undergraduate with a strong foundation in full-stack development, 
+                            specializing in React.js, PHP, Node.js, Python, Java OOP principles and Database Management. Passionate about developing scalable, 
+                            user-friendly web applications.</p>
+                        <div class="social-icons">
+
+                            <a href="https://github.com/DilkiAttanayake" class="social-icon" title="GitHub">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.262.82-.582 0-.288-.01-1.05-.016-2.06-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.468-2.381 1.235-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 2.047.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.803 5.625-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.699.825.58C20.565 21.796 24 17.297 24 12c0-6.63-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+
+
+                            <a href="mailto:wathsalaattanayake@gmail.com" class="social-icon" title="Email">
+                                <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/dilki-attanayake" class="social-icon" title="LinkedIn">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.instagram.com/wath_sala__" class="social-icon" title="Instagram">
+                                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#message">Contact</a></li>                        
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Skills</h3>
+                        <ul class="footer-links">
+                            <li>Web Design</li>
+                            <li>Development</a></li>
+                            <li>RESTful API Development</a></li>
+                            <li>CI/CD Setup</a></li>
+                            <li>Database Design</a></li>
+                            <li>Backend Development</a></li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+
+                <div class="footer-bottom" id="copyright">
+                    <p style="color: rgb(236, 227, 227);">
+                        &copy; 2024 Dilki Attanyake. All rights reserved.
+                        <button class="top-button" onclick="scrollToTop()" title="Go to Top" style="vertical-align: middle;">
+                            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" style="vertical-align: middle;">
+                                <path d="M10 4l-6 6h4v6h4v-6h4l-6-6z"/>
+                            </svg>
+                        </button>
+                    </p>
+                </div>
+
+            </div>        
+
+        </footer>
+
+        <script> // Js for "Go to Top" button
+            function scrollToTop() { // function to scroll the top of the page
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll the window for top smoothly
+            }
+        </script>
+
+    </body>
 </html>
 
 
