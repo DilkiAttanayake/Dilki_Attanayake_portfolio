@@ -706,21 +706,9 @@ h3 {
     img[alt="profile picture"] {
         width: 150px;
         height: 150px;
-        margin-left: 26%;
+        margin-left: 24%;
         display: block;
     }
-}
-
-
-/*--------------------------------- ABOUT PAGE STYLES--------------------------------------- */      
-
-
-
-/* NEGATION PSEUDO CLASS */
-/* Style all paragraphs except those with the class "no-style" */
-p:not(.no-style) {
-    font-size: 1.1em;
-    color: #333;
 }
 
 
@@ -1418,7 +1406,7 @@ h2 {
         }
 
         .project-description {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgb(203, 195, 195);
             line-height: 1.6;
             margin-bottom: 1.5rem;
             font-size: 0.95rem;
