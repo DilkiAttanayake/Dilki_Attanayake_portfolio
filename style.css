@@ -663,28 +663,24 @@ h3 {
         height: 300px;
         margin-left: 30%;       
         display: block;
+        
     }
 }
 
 @media (max-width: 600px) { /* Media query for devices with maximum width of 600px (small devices-phones) */
-    .details {
-        font-size: 1.2em;
-        text-align: center;
-        margin-left: 0;
-    }
 
     .role {
         font-size: 1em;
         margin-left: 0;
-        margin-top: 27%;
+        margin-top: 32%;
     }
 
     img[alt="profile picture"] {
         width: 150px;
         height: 150px;
-        margin-left: 26%;
+        margin-left: 24%;
         display: block;
-        margin-top: 30%;
+        margin-top: 34%;
     }
 }
 
