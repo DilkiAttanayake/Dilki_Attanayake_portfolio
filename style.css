@@ -23,14 +23,14 @@ body, html {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: #ffff00;
+    background: #ff4444;
     border-radius: 50%;
     opacity: 0.3;
     animation: float 6s infinite linear;
 }
 
 .site-particle:nth-child(even) {
-    background: #90ee90;
+    background: #ff6b6b;
     animation-duration: 8s;
 }
 
@@ -71,13 +71,13 @@ h3 {
             transform: translateX(-50%);
             background: rgba(0, 0, 0, 0.9);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(50, 205, 50, 0.3);
+            border: 1px solid rgba(220, 53, 69, 0.3);
             border-radius: 60px;
             padding: 8px;
             z-index: 1000;
             box-shadow: 
                 0 8px 32px rgba(0, 0, 0, 0.3),
-                0 0 60px rgba(50, 205, 50, 0.1),
+                0 0 60px rgba(220, 53, 69, 0.1),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
 
@@ -118,7 +118,7 @@ h3 {
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #32cd32, #ffff00);
+            background: linear-gradient(135deg, #dc3545, #ff6b6b);
             border-radius: 25px;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: -1;
@@ -132,7 +132,7 @@ h3 {
             left: 50%;
             width: 0;
             height: 0;
-            background: radial-gradient(circle, rgba(255, 255, 0, 0.3) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 68, 68, 0.3) 0%, transparent 70%);
             border-radius: 50%;
             transform: translate(-50%, -50%);
             transition: all 0.6s ease;
@@ -140,9 +140,9 @@ h3 {
 
         /* Hover Effects */
         .nav-link:hover {
-            color: #000;
+            color: #fff;
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(50, 205, 50, 0.3);
+            box-shadow: 0 10px 25px rgba(220, 53, 69, 0.3);
         }
 
         .nav-link:hover::before {
@@ -156,11 +156,11 @@ h3 {
 
         /* Active State */
         .nav-link.active {
-            background: linear-gradient(135deg, #32cd32, #ffff00);
-            color: #000;
+            background: linear-gradient(135deg, #dc3545, #ff6b6b);
+            color: #fff;;
             font-weight: 700;
             box-shadow: 
-                0 5px 15px rgba(50, 205, 50, 0.4),
+                0 5px 15px rgba(220, 53, 69, 0.4),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
 
@@ -171,8 +171,8 @@ h3 {
         /* Neon Glow Button */
         .cta-button {
             background: transparent;
-            border: 2px solid #32cd32;
-            color: #32cd32;
+            border: 2px solid #dc3545;
+            color: #dc3545;
             padding: 12px 25px;
             border-radius: 25px;
             font-weight: 600;
@@ -193,23 +193,22 @@ h3 {
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(50, 205, 50, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(220, 53, 69, 0.2), transparent);
             transition: left 0.5s ease;
         }
 
         .cta-button:hover {
-            color: #000;
-            background: #32cd32;
+            color:  #fff;;
+            background: #dc3545;
             box-shadow: 
-                0 0 30px rgba(50, 205, 50, 0.6),
-                inset 0 0 30px rgba(255, 255, 0, 0.2);
+                0 0 30px rgba(220, 53, 69, 0.6),
+                inset 0 0 30px rgba(255, 68, 68, 0.2);
             transform: scale(1.05);
         }
 
         .cta-button:hover::before {
             left: 100%;
-        }
-    
+        }   
 
 /* Header container for logo and toggle */
 .nav-header {
@@ -228,7 +227,7 @@ h3 {
 .nav-toggle-label {
     display: none;
     font-size: 28px;
-    color: #32cd32;
+    color: #dc3545;
     cursor: pointer;
     padding: 10px;
     z-index: 1100;
@@ -236,6 +235,11 @@ h3 {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+
+    #start_button {
+            display: none;
+    }
+
     .navbar {
         flex-direction: column;
         width: 90%;
@@ -281,8 +285,8 @@ h3 {
 /* --------------------------------------footer ------------------------------*/
 
         .footer {
-            background: linear-gradient(135deg, #65ea06 0%, #164636 100%);
-            color: black;
+            background: linear-gradient(135deg, #e74c3c 0%, #8b1538 100%);
+            color: white;
             padding: 4rem 0 2rem;
             position: relative;
             overflow: hidden;
@@ -314,7 +318,7 @@ h3 {
         .footer-section h3 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            background: rgba(255, 255, 255, 0.8);
+            background: #FBCEB1;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -323,7 +327,7 @@ h3 {
 
         .footer-section p {
             line-height: 1.8;
-            color: black;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 1.5rem;
         }
 
@@ -336,7 +340,7 @@ h3 {
         }
 
         .footer-links a {
-            color:black;
+            color:white;
             text-decoration: none;
             transition: all 0.3s ease;
             position: relative;
@@ -354,7 +358,7 @@ h3 {
         }
 
         .footer-links a:hover {
-            color: #e5e904;
+            color: #ebd80b;
             transform: translateX(5px);
         }
 
@@ -385,15 +389,15 @@ h3 {
         }
 
         .social-icon:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(220, 53, 69, 0.3);
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgba(220, 53, 69, 0.3);
         }
 
         
 
         .footer-bottom {
-            border-top: 1px solid rgb(221, 218, 218);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             padding-top: 2rem;
             text-align: center;
             display: flex;
@@ -416,7 +420,7 @@ h3 {
 
         .floating-circle {
             position: absolute;
-            background: rgba(255, 255, 255, 0.756);
+            background: rgba(255, 107, 107, 0.3);
             border-radius: 50%;
             animation: float 6s ease-in-out infinite;
         }
@@ -540,21 +544,21 @@ h3 {
     margin-left: 772px;
     display: inline-block;
     outline: 0;
-    border: 0;
+    border: 1px solid #fff; /* White border */
     cursor: pointer;
     font-weight: 600;
-    color: black;
+    color: white;
     font-size: 14px;
     height: 38px;
     padding: 8px 24px;
     border-radius: 50px;
-    background-image: linear-gradient(180deg, #c6bc0e, #0c420a);
-    box-shadow: 0 4px 11px 0 rgba(37, 44, 97, 0.15), 0 1px 3px 0 rgba(93, 100, 148, 0.20); /* Box Shadow */
+    background-image: linear-gradient(180deg, #dc3545, #8b1538);
+    box-shadow: 0 4px 11px 0 rgba(220, 53, 69, 0.3), 0 1px 3px 0 rgba(139, 21, 56, 0.20); /* Box Shadow */
     transition: all .2s ease-out;
 }
 
 .top-button:focus { /* User action pseudo-class */
-    outline: 2px solid #073513; /* Add outline on focus */
+    outline: 2px solid #dc3545; /* Add outline on focus */
     outline-offset: 2px; /* Offset the outline slightly */
 }
 
@@ -566,28 +570,6 @@ h3 {
 
 
 /*--------------------------------- HOME PAGE STYLES--------------------------------------- */
-
-.details {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 44px;
-    padding-top: 94px;
-    margin-top: 40px;
-    margin-left: 44px;
-    color: rgb(177, 159, 23);
-    opacity: 0;
-    animation: detailsFadeIn 2s ease-in-out forwards;
-}
-
-@keyframes detailsFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(40px) scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
 
 /* Enhanced profile image animation */
         img[alt="profile picture"] {
@@ -602,9 +584,9 @@ h3 {
             
             /* Enhanced styling */
             box-shadow: 
-                0 0 30px rgba(89, 255, 0, 0.538),
-                0 0 60px rgba(83, 98, 10, 0.1);
-            border: 3px solid rgba(201, 178, 28, 0.1);
+                0 0 30px rgba(255, 68, 68, 0.5),
+                0 0 60px rgba(220, 53, 69, 0.3);
+            border: 3px solid rgba(220, 53, 69, 0.3);
             
             /* Beautiful continuous animation */
             animation: 
@@ -617,17 +599,17 @@ h3 {
         @keyframes glowPulse {
             0%, 100% {
                 box-shadow: 
-                    0 0 30px rgba(5, 220, 45, 0.3),
-                    0 0 60px rgba(1, 148, 9, 0.1),
+                    0 0 30px rgba(255, 68, 68, 0.4),
+                    0 0 60px rgba(220, 53, 69, 0.2),
                     inset 0 0 20px rgba(255, 255, 255, 0.1);
-                border-color: rgba(3, 74, 13, 0.1);
+                border-color: rgba(220, 53, 69, 0.3);
             }
             50% {
                 box-shadow: 
-                    0 0 50px rgba(184, 233, 8, 0.5),
-                    0 0 100px rgba(229, 245, 8, 0.2),
+                    0 0 50px rgba(255, 107, 107, 0.6),
+                    0 0 100px rgba(232, 67, 67, 0.4),
                     inset 0 0 30px rgba(255, 255, 255, 0.2);
-                border-color: rgba(17, 255, 0, 0.3);
+                border-color: rgba(255, 68, 68, 0.5);
             }
         }
 
@@ -648,10 +630,10 @@ h3 {
 .role {
     font-family: 'Bungee Shade', cursive;
     font-size: 38px;
-    color: rgb(14, 183, 76);
+    color: #E30B5C;
     text-align: center;
     position: relative;
-    margin-top: 300px;
+    margin-top: 420px;
     margin-left:950px;
     animation: roleFadeIn 2s ease-in-out;
 }
@@ -670,16 +652,10 @@ h3 {
 /* Media queries for responsiveness */
 
 @media (max-width: 768px) { /* Media query for devices with maximum width of 768px (medium devices-tablets) */
-    .details {
-        font-size: 1.5em;
-        text-align: center;
-        margin-left: 0;
-    }
-
     .role {
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 0;
-        margin-top: 40%;
+        margin-top: 27%;
     }
 
     img[alt="profile picture"] {
@@ -700,14 +676,15 @@ h3 {
     .role {
         font-size: 1em;
         margin-left: 0;
-        margin-top: 60%;
+        margin-top: 27%;
     }
 
     img[alt="profile picture"] {
         width: 150px;
         height: 150px;
-        margin-left: 24%;
+        margin-left: 26%;
         display: block;
+        margin-top: 30%;
     }
 }
 
@@ -755,7 +732,7 @@ h2 {
         .section-title1 {
             font-size: 2.5rem;
             font-weight: 800;
-            background: linear-gradient(45deg, #c69b0f, #159f20);
+            background: linear-gradient(45deg, #A45A52, #E0115F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -764,8 +741,8 @@ h2 {
         }
 
         .section-subtitle {
-            font-size: 1.2rem;
-            color: rgba(231, 223, 223, 0.8);
+            font-size: 1rem;
+            color: rgba(255, 107, 107, 0.9);
             font-weight: 300;
             letter-spacing: 2px;
         }
@@ -794,7 +771,7 @@ h2 {
             height: 300px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid rgba(19, 145, 52, 0.3);
+            border: 4px solid rgba(220, 53, 69, 0.3);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             position: relative;
@@ -814,7 +791,7 @@ h2 {
             height: 340px;
             border-radius: 50%;
             border: 3px solid transparent;
-            background: linear-gradient(45deg, #4aa118, #799d0f, #8f0f7a, #caa70d);
+            background: linear-gradient(45deg, #E52B50, #65000B, #FE28A2, #A91101);
             background-size: 300% 300%;
             animation: rotateGradient 4s linear infinite;
             z-index: 1;
@@ -863,7 +840,7 @@ h2 {
         .stat-number {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #62dc16;
+            color: #EF0107;
             display: block;
         }
 
@@ -882,7 +859,7 @@ h2 {
         .about-text h2 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            background: linear-gradient(45deg, #718542, #dceb08);
+            background: linear-gradient(45deg, #BC3F4A, #FE28A2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -893,7 +870,7 @@ h2 {
             font-size: 15px;
             line-height: 1.8;
             margin-bottom: 1.5rem;
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(252, 255, 252, 0.9);
         }
 
         .skills-section {
@@ -903,7 +880,7 @@ h2 {
         .skills-title {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            color: #8ea21e;
+            color: #E30B5C;
             font-weight: 600;
         }
 
@@ -978,13 +955,13 @@ h2 {
         }
 
         .cta-primary {
-            background: linear-gradient(45deg, #e6f60b, #2e2f02);
+            background: linear-gradient(45deg, #dc3545, #8b1538);
             color: white;
         }
 
         .cta-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(107, 255, 156, 0.4);
+            box-shadow: 0 15px 35px rgba(220, 53, 69, 0.4);
         }
 
         .cta-secondary {
@@ -994,7 +971,7 @@ h2 {
         }
 
         .cta-secondary:hover {
-            background: rgba(39, 196, 12, 0.36);
+            background: rgba(220, 53, 69, 0.2);
             border-color: rgba(255, 255, 255, 0.5);
             transform: translateY(-3px);
         }
@@ -1052,6 +1029,7 @@ h2 {
         @media (max-width: 768px) {
             .about-container {
                 padding: 2rem;
+                margin-top: 52%;
             }
 
             .section-title {
@@ -1232,9 +1210,9 @@ h2 {
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             font-weight: 800;
-            background: linear-gradient(45deg, #c69b0f, #159f20);
+            background: linear-gradient(45deg, #DA291C, #B7410E);
             background-size: 300% 100%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -1249,7 +1227,7 @@ h2 {
         }
 
         .section-subtitle {
-            font-size: 1.3rem;
+            font-size: 1rem;
             color: rgba(255, 255, 255, 0.8);
             font-weight: 300;
             letter-spacing: 2px;
@@ -1278,10 +1256,10 @@ h2 {
 
         .filter-tab.active,
         .filter-tab:hover {
-            background: linear-gradient(45deg, #159f3a, #a8b143);
+            background: linear-gradient(45deg, #FF4500, #C04000);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(107, 255, 223, 0.3);
+            box-shadow: 0 10px 25px rgba(216, 94, 7, 0.618);
         }
 
         .projects-grid {
@@ -1347,7 +1325,7 @@ h2 {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(168, 165, 71, 0.8), rgba(65, 148, 57, 0.8));
+            background: linear-gradient(45deg, rgba(196, 69, 105, 0.8), rgba(229, 120, 57, 0.8));
             opacity: 0;
             transition: all 0.3s ease;
             display: flex;
@@ -1365,7 +1343,7 @@ h2 {
             background: rgba(255, 255, 255, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 50px;
-            color: white;
+            color: black;
             text-decoration: none;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
@@ -1387,8 +1365,8 @@ h2 {
         .project-category {
             display: inline-block;
             padding: 6px 16px;
-            background: linear-gradient(45deg, #e1a65d, #42af90);
-            color: white;
+            background: linear-gradient(45deg, #FF3800, #C71585);
+            color: black;
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: 600;
@@ -1449,8 +1427,8 @@ h2 {
         }
 
         .link-primary {
-            background: linear-gradient(45deg, #be8c4e, #369379);
-            color: white;
+            background: linear-gradient(45deg, #FBCEB1, #FF3800);
+            color: black;
         }
 
         .link-primary:hover {
@@ -1631,6 +1609,9 @@ h2 {
     }
 }
 
+.card, .project-card, .about-card {
+    margin-bottom: 3rem; /* Increase from default */
+}
 
 /* --------------------------------- Contact styles --------------------------------- */
 
@@ -1649,20 +1630,20 @@ h2 {
 
 
 .title {
-    color: #ffff00;
+    color: #FF00FF;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-    text-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
-    background: linear-gradient(45deg, #ffff00, #90ee90);
+    text-shadow: 0 0 20px rgba(255, 71, 87, 0.5);
+    background: linear-gradient(45deg, #FF00FF, #C21E56);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .subtitle {
-    color: #90ee90;
+    color: #ff6b7a;
     text-align: center;
     margin-bottom: 40px;
     font-size: 1.1rem;
@@ -1682,7 +1663,7 @@ h2 {
 
 label {
     display: block;
-    color: #90ee90;
+    color: #FF007F;
     font-weight: 600;
     margin-bottom: 8px;
     font-size: 0.9rem;
@@ -1692,7 +1673,7 @@ label {
 
 input, textarea {
     width: 100%;
-    background: rgba(255, 255, 0, 0.05);
+    background: rgba(255, 71, 87, 0.05);
     border: 2px solid #333;
     border-radius: 12px;
     padding: 15px 20px;
@@ -1703,11 +1684,11 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #ffff00;
-    background: rgba(255, 255, 0, 0.1);
+    border-color:  #C21E56;
+    background: rgba(255, 71, 87, 0.1);
     box-shadow: 
-        0 0 0 3px rgba(255, 255, 0, 0.1),
-        0 0 20px rgba(255, 255, 0, 0.2);
+        0 0 0 3px rgba(255, 71, 87, 0.1),
+        0 0 20px rgba(255, 71, 87, 0.2);
     transform: translateY(-2px);
 }
 
@@ -1729,7 +1710,7 @@ textarea {
 }
 
 .char-counter.warning {
-    color: #ffff00;
+    color: #ff9ff3;
 }
 
 .char-counter.danger {
@@ -1737,12 +1718,12 @@ textarea {
 }
 
 .send-button {
-    background: linear-gradient(135deg, #c4c415 0%, #5c5c05 100%);
+    background: linear-gradient(135deg, #F400A1 0%, #C21E56 100%);
     border: none;
     border-radius: 45px;
     padding: 18px 20px;
-    color: #000;
-    font-size: 1.1rem;
+    color: black;
+    font-size: 0.9rem; /* reduced font size */
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1758,8 +1739,8 @@ textarea {
 .send-button:hover {
     transform: translateY(-3px);
     box-shadow: 
-        0 10px 25px rgba(255, 255, 0, 0.3),
-        0 0 40px rgba(144, 238, 144, 0.2);
+        0 10px 25px rgba(255, 71, 87, 0.3),
+        0 0 40px rgba(255, 107, 122, 0.2);
 }
 
 .send-button:active {
@@ -1782,11 +1763,11 @@ textarea {
 }
 
 .success-message {
-    background: linear-gradient(135deg, rgba(144, 238, 144, 0.1), rgba(255, 255, 0, 0.1));
-    border: 1px solid #90ee90;
+    background: linear-gradient(135deg, rgba(255, 107, 122, 0.1), rgba(255, 71, 87, 0.1));
+    border: 1px solid #ff6b7a;
     border-radius: 12px;
     padding: 15px;
-    color: #90ee90;
+    color: #ff6b7a;
     text-align: center;
     margin-top: 20px;
     opacity: 0;
@@ -1813,14 +1794,14 @@ textarea {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: #ffff00;
+    background: #ff4757;
     border-radius: 50%;
     opacity: 0.3;
     animation: float 6s infinite linear;
 }
 
 .particle:nth-child(even) {
-    background: #90ee90;
+    background: #ff6b7a;
     animation-duration: 8s;
 }
 
